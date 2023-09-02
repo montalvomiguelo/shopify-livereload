@@ -19,15 +19,11 @@ const debounce = <T extends (...args: any[]) => void>(callback: T, time: number)
 }
 
 export default class LiveReload extends Command {
-  static description = 'Live Reload listening on port 35729'
+  static description = 'LiveReload plugin for oclif'
   server: any
 
-  static examples = [
-    '<%= config.bin %> <%= command.id %>',
-  ]
-
   static flags = {
-    port: Flags.string({description: 'Livereload port.', default: '35729'}),
+    port: Flags.string({description: 'LiveReload port.', default: '35729'}),
     path: Flags.string({description: 'Paths to watch for changes.', required: true, multiple: true}),
     delay: Flags.string({description: 'Delay to wait before reloading.', default: '25'}),
   }
@@ -43,7 +39,7 @@ export default class LiveReload extends Command {
     })
 
     this.server.listen(port, function () {
-      console.log(`Live Reload listening on port ${pc.green(port)}`)
+      console.log(`LiveReload listening on port ${pc.green(port)}`)
     })
 
     chokidar

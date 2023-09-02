@@ -52,7 +52,7 @@
     "topicSeparator": " ",
     "topics": {
       "livereload": {
-        "description": "Livereload plugin for oclif"
+        "description": "LiveReload plugin for oclif"
       }
     }
   },
