@@ -24,13 +24,13 @@ export default class LiveReload extends Command {
 
   static flags = {
     port: Flags.string({description: 'LiveReload port.', default: '35729'}),
-    path: Flags.string({description: 'Paths to watch for changes.', required: true, multiple: true}),
+    watch: Flags.string({description: 'Paths to watch for changes.', required: true, multiple: true}),
     delay: Flags.string({description: 'Delay to wait before reloading.', default: '25'}),
   }
 
   public async run(): Promise<void> {
     const {flags} = await this.parse(LiveReload)
-    const {port, path, delay} = flags
+    const {port, watch: paths, delay} = flags
 
     const debouncedReload = debounce(this.reload.bind(this), Number.parseInt(delay, 10))
 
@@ -43,7 +43,7 @@ export default class LiveReload extends Command {
     })
 
     chokidar
-    .watch(path, {ignoreInitial: true})
+    .watch(paths, {ignoreInitial: true})
     .on('add', debouncedReload)
     .on('change', debouncedReload)
   }

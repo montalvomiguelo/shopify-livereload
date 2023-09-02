@@ -41,13 +41,13 @@ Alternatively, you can manually add the following code just before the closing <
 
 ```bash
 USAGE
-  $ livereload --path <value> [--port <value>] [--delay <value>]
+  $ livereload --watch <value> [--port <value>] [--delay <value>]
 
 FLAGS
-  --delay=<value>    [default: 25] Delay to wait before reloading.
-  --path=<value>...  (required) Paths to watch for changes.
-  --port=<value>     [default: 35729] LiveReload port.
+  --delay=<value>     [default: 25] Delay to wait before reloading.
+  --port=<value>      [default: 35729] LiveReload port.
+  --watch=<value>...  (required) Paths to watch for changes.
 
 DESCRIPTION
-  Livereload plugin for oclif
+  LiveReload plugin for oclif
 ```
