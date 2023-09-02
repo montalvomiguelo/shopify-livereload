@@ -29,9 +29,8 @@ shopify theme dev --notify /tmp/extension.update
 
 ### Install LiveReload.js
 
-You can use the LiveReload Chrome plugin for a hassle-free installation experience. You can find the plugin [here](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei).
-
-Alternatively, you can manually add the following code just before the closing </body> tag within your layout file:
+Add the following code just before the closing `</body>` tag within your layout file. Alternatively, you can use
+the [LiveReload Chrome plugin](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei).
 
 ```html
 <script src="http://localhost:35729/livereload.js"></script>
@@ -51,3 +50,9 @@ FLAGS
 DESCRIPTION
   LiveReload plugin for oclif
 ```
+
+## License
+Made with ❤️
+
+Published under [MIT License](./LICENSE).
+
