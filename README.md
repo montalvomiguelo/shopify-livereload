@@ -6,7 +6,7 @@ The Shopify LiveReload Plugin is designed to enhance your development experience
 ## Installation
 
 ```bash
-shopify plugins:install shopify-plugin-livereload
+shopify plugins:install shopify-livereload
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ shopify livereload --watch /tmp/theme.update --delay 1600
 
 ### Theme Development with LiveReload
 
-Serve your theme and provide the `--notify` flag with a file path you want to update when the workers have gone idle.
+Serve your theme and provide the `--notify` flag:
 
 ```bash
 shopify theme dev --notify /tmp/theme.update

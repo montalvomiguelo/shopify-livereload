@@ -1,15 +1,15 @@
 {
-  "name": "shopify-plugin-livereload",
+  "name": "shopify-livereload",
   "version": "0.1.0",
   "description": "oclif plugin for livereload",
   "author": "Miguel Montalvo @montalvomiguelo",
   "bin": {
-    "shopify-plugin-livereload": "./bin/run"
+    "shopify-livereload": "./bin/run"
   },
-  "homepage": "https://github.com/montalvomiguelo/shopify-plugin-livereload",
+  "homepage": "https://github.com/montalvomiguelo/shopify-livereload",
   "license": "MIT",
   "main": "dist/index.js",
-  "repository": "montalvomiguelo/shopify-plugin-livereload",
+  "repository": "montalvomiguelo/shopify-livereload",
   "files": [
     "/bin",
     "/dist",
@@ -40,8 +40,8 @@
     "typescript": "^4.9.5"
   },
   "oclif": {
-    "bin": "shopify-plugin-livereload",
-    "dirname": "shopify-plugin-livereload",
+    "bin": "shopify-livereload",
+    "dirname": "shopify-livereload",
     "commands": "./dist/commands",
     "plugins": [
       "@oclif/plugin-help"
@@ -65,7 +65,7 @@
   "engines": {
     "node": ">=12.0.0"
   },
-  "bugs": "https://github.com/montalvomiguelo/shopify-plugin-livereload/issues",
+  "bugs": "https://github.com/montalvomiguelo/shopify-livereload/issues",
   "keywords": [
     "oclif"
   ],
