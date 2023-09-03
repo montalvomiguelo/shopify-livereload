@@ -6,7 +6,7 @@ The Shopify oclif LiveReload Plugin is designed to enhance your development expe
 ## Installation
 
 ```bash
-shopify plugins:install oclif-livereload
+shopify plugins:install shopify-plugin-livereload
 ```
 
 ## Usage
