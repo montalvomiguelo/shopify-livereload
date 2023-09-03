@@ -21,10 +21,10 @@ shopify livereload --watch /tmp/theme.update --delay 1600
 
 ### Theme Development with LiveReload
 
-Integrate LiveReload into your theme development workflow in the Shopify CLI:
+Serve your theme and provide the `--notify` flag with a file path you want to update when the workers have gone idle.
 
 ```bash
-shopify theme dev --notify /tmp/extension.update
+shopify theme dev --notify /tmp/theme.update
 ```
 
 ### Install LiveReload.js
@@ -38,9 +38,9 @@ the [LiveReload Chrome plugin](https://chrome.google.com/webstore/detail/liverel
 
 ## Command
 
-```bash
+```
 USAGE
-  $ livereload --watch <value> [--port <value>] [--delay <value>]
+  $ shopify livereload --watch <value> [--port <value>] [--delay <value>]
 
 FLAGS
   --delay=<value>     [default: 25] Delay to wait before reloading.
