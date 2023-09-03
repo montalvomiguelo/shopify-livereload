@@ -19,13 +19,13 @@ const debounce = <T extends (...args: any[]) => void>(callback: T, time: number)
 }
 
 export default class LiveReload extends Command {
-  static description = 'LiveReload plugin for oclif'
+  static description = 'LiveReload plugin for Shopify'
   server: any
 
   static flags = {
     port: Flags.string({description: 'LiveReload port.', default: '35729'}),
-    watch: Flags.string({description: 'Paths to watch for changes.', required: true, multiple: true}),
-    delay: Flags.string({description: 'Delay to wait before reloading.', default: '25'}),
+    watch: Flags.string({description: 'Path to watch for changes (Multiple flags allowed).', required: true, multiple: true}),
+    delay: Flags.string({description: 'Delay in ms to wait before reloading.', default: '25'}),
   }
 
   public async run(): Promise<void> {

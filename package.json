@@ -1,7 +1,7 @@
 {
   "name": "shopify-livereload",
   "version": "0.1.0",
-  "description": "oclif plugin for livereload",
+  "description": "LiveReload plugin for Shopify",
   "author": "Miguel Montalvo @montalvomiguelo",
   "bin": {
     "shopify-livereload": "./bin/run"

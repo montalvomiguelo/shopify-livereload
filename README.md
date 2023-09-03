@@ -43,9 +43,9 @@ USAGE
   $ shopify livereload --watch <value> [--port <value>] [--delay <value>]
 
 FLAGS
-  --delay=<value>     [default: 25] Delay to wait before reloading.
+  --delay=<value>     [default: 25] Delay in ms to wait before reloading.
   --port=<value>      [default: 35729] LiveReload port.
-  --watch=<value>...  (required) Paths to watch for changes.
+  --watch=<value>...  (required) Path to watch for changes (Multiple flags allowed).
 
 DESCRIPTION
   LiveReload plugin for Shopify
