@@ -1,7 +1,7 @@
-Shopify oclif LiveReload Plugin
+Shopify LiveReload Plugin
 =================
 
-The Shopify oclif LiveReload Plugin is designed to enhance your development experience within the Shopify Theme Editor. It integrates seamlessly with the [Shopify CLI](https://shopify.dev/docs/themes/tools/cli), allowing you to reload the page automatically when file changes are detected.
+The Shopify LiveReload Plugin is designed to enhance your development experience within the Shopify Theme Editor. It integrates seamlessly with the [Shopify CLI](https://shopify.dev/docs/themes/tools/cli), allowing you to reload the page automatically when file changes are detected.
 
 ## Installation
 
@@ -48,11 +48,10 @@ FLAGS
   --watch=<value>...  (required) Paths to watch for changes.
 
 DESCRIPTION
-  LiveReload plugin for oclif
+  LiveReload plugin for Shopify
 ```
 
 ## License
 Made with ❤️
 
 Published under [MIT License](./LICENSE).
-

@@ -49,7 +49,7 @@
     "topicSeparator": " ",
     "topics": {
       "livereload": {
-        "description": "LiveReload plugin for oclif"
+        "description": "LiveReload plugin for Shopify"
       }
     }
   },
