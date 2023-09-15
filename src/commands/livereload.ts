@@ -1,5 +1,4 @@
 import {Command, Flags} from '@oclif/core'
-import pc from 'picocolors'
 import chokidar from 'chokidar'
 
 const tinylr = require('tiny-lr')
@@ -39,7 +38,8 @@ export default class LiveReload extends Command {
     })
 
     this.server.listen(port, function () {
-      console.log(`LiveReload listening on port ${pc.green(port)}`)
+    // eslint-disable-next-line unicorn/escape-case, unicorn/no-hex-escape
+      console.log('\x1b[33m%s\x1b[0m %s %s', '*', 'LiveReload is listening on port', port)
     })
 
     chokidar
@@ -49,7 +49,8 @@ export default class LiveReload extends Command {
   }
 
   reload(path: string): void {
-    console.log(`Reloading ${pc.green(path)}`)
+    // eslint-disable-next-line unicorn/escape-case, unicorn/no-hex-escape
+    console.log('  \x1b[38;5;244m%s %s\x1b[0m %s \x1b[38;5;244m%s %s\x1b[0m', '\u2022', timestamp(), 'Reloading', '\u00BB', path)
     this.server.changed({
       body: {
         files: [path],
@@ -58,3 +59,10 @@ export default class LiveReload extends Command {
   }
 }
 
+function timestamp() {
+  const now = new Date()
+  const hours = String(now.getHours()).padStart(2, '0')
+  const minutes = String(now.getMinutes()).padStart(2, '0')
+  const seconds = String(now.getSeconds()).padStart(2, '0')
+  return `${hours}:${minutes}:${seconds}`
+}

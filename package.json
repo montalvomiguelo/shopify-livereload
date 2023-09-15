@@ -20,7 +20,6 @@
     "@oclif/core": "^2",
     "@oclif/plugin-help": "^5",
     "chokidar": "^3.5.3",
-    "picocolors": "^1.0.0",
     "tiny-lr": "^2.0.0"
   },
   "devDependencies": {
