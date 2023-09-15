@@ -51,6 +51,14 @@ DESCRIPTION
   LiveReload plugin for Shopify
 ```
 
+## Development
+For normal development, the initial setup is:
+
+```sh
+$ npm install
+$ shopify plugins:link
+```
+
 ## License
 Made with ❤️
 
