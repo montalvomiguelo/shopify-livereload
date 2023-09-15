@@ -3,6 +3,8 @@ Shopify LiveReload Plugin
 
 The Shopify LiveReload Plugin is designed to enhance your development experience within the Shopify Theme Editor. It integrates seamlessly with the [Shopify CLI](https://shopify.dev/docs/themes/tools/cli), allowing you to reload the page automatically when file changes are detected.
 
+![pika-1694794115083-1x](https://github.com/montalvomiguelo/shopify-livereload/assets/5134470/e16bdcff-e292-43ac-85d4-7e808911997d)
+
 ## Installation
 
 ```bash
