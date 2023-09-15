@@ -1,6 +1,6 @@
 {
   "name": "shopify-livereload",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "LiveReload plugin for Shopify",
   "author": "Miguel Montalvo @montalvomiguelo",
   "bin": {
